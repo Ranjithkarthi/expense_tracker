@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TransactionList from './components/TransactionList/TransactionList';
-import AddTransaction from './components/AddTransaction/AddTransaction';
-import EditTransaction from './components/EditTransaction/EditTransaction'; // Import the EditTransaction component
+// import AddTransaction from './components/AddTransaction/AddTransaction';
+import EditTransaction from './components/EditTransaction/EditTransaction';
 import Summary from './components/Summary/Summary';
 import "./App.css"
 const App = () => {
@@ -12,9 +12,8 @@ const App = () => {
         <hr className='horizontal-line'/>
         <Routes>
           <Route path="/" element={<TransactionList />} />
-          <Route path="/add" element={<AddTransaction />} />
           <Route path="/summary" element={<Summary />} />
-          <Route path="/edit/:id" element={<EditTransaction />} /> {/* Route for editing */}
+          <Route path="/edit/:id" element={<EditTransaction />} />
         </Routes>
       </div>
     </Router>
