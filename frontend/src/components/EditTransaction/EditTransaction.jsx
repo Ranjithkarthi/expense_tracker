@@ -8,7 +8,7 @@ const EditTransaction = () => {
 
   useEffect(() => {
     // Fetch the current transaction details
-    fetch(`http://localhost:3000/api/transactions/${id}`)
+    fetch(`https://expense-tracker-backend-nc31.onrender.com/api/transactions/${id}`)
       .then((response) => response.json())
       .then((data) => setTransaction(data.transaction));
   }, [id]);
@@ -17,7 +17,7 @@ const EditTransaction = () => {
     e.preventDefault();
     // Update the transaction by its ID
     try {
-      await fetch(`http://localhost:3000/api/transactions/${id}`, {
+      await fetch(`https://expense-tracker-backend-nc31.onrender.com/api/transactions/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
