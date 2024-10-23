@@ -10,7 +10,7 @@ const AddTransaction = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/transactions', {
+      await axios.post('https://expense-tracker-backend-nc31.onrender.com/api/transactions', {
         type,
         category,
         amount,
