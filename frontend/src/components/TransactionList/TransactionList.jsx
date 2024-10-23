@@ -7,7 +7,7 @@ const TransactionList = () => {
 
   // Fetch all transactions on component load
   useEffect(() => {
-    fetch('http://localhost:3000/api/transactions')
+    fetch('https://expense-tracker-backend-nc31.onrender.com/api/transactions')
       .then((response) => response.json())
       .then((data) => setTransactions(data.transactions));
   }, []);
@@ -16,7 +16,7 @@ const TransactionList = () => {
   const handleAddTransaction = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/transactions', {
+      const response = await fetch('https://expense-tracker-backend-nc31.onrender.com/api/transactions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const TransactionList = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this transaction?')) {
       try {
-        await fetch(`http://localhost:3000/api/transactions/${id}`, {
+        await fetch(`https://expense-tracker-backend-nc31.onrender.com/api/transactions/${id}`, {
           method: 'DELETE',
         });
         setTransactions(transactions.filter((transaction) => transaction._id !== id));
