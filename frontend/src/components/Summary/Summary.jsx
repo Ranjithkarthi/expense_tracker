@@ -13,7 +13,7 @@ const Summary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/transactions/summary');
+        const response = await fetch('https://expense-tracker-backend-nc31.onrender.com/api/transactions/summary');
         if (!response.ok) {
           throw new Error('Failed to fetch summary');
         }
