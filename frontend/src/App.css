@@ -1,0 +1,18 @@
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 46px;
+  margin: 26px;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 23px;
+  flex-wrap: wrap;
+}
+
+.horizontal-line{
+  width: 200px;
+  border: 1px solid gray;
+  margin-top: 6px;
+}

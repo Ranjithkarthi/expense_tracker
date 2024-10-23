@@ -1,0 +1,65 @@
+/* Container for the edit form */
+.edit-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Grid layout for form container with row spacing */
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between rows and columns */
+    margin-bottom: 15px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: 500;
+    grid-column: span 2; /* Label takes full row */
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    grid-column: span 2; /* Full-width inputs */
+    margin-bottom: 20px; /* Space between input fields */
+  }
+  
+  /* Single-row items */
+  .form-container .half-width {
+    grid-column: span 1; /* Items that span half-width of the row */
+  }
+  
+  button[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

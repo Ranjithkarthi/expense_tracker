@@ -1,0 +1,30 @@
+/* Container for the summary section */
+.summary-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading style */
+.summary-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph style for summary values */
+.summary-container p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Highlighted balance style */
+.summary-container p:last-child {
+    font-weight: bold;
+    color: #007bff; /* You can use a different color to emphasize balance */
+}
